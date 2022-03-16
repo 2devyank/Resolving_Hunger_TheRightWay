@@ -1,13 +1,19 @@
 const mongoose =require('mongoose')
 
 const infoschema=new mongoose.Schema({
-    heading:{
+    org:{
         type:String,
         // required:true
     },
-    message:{
+    address:{
         type:String,
         // required:true
+    },
+    info:{
+        type:String,
+    },
+    contact:{
+        type:String
     }
 })
 
