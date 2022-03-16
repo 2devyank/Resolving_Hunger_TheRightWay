@@ -28,6 +28,19 @@ res.status(201).json('info deleted succesfully ')
 console.log(error)
     }
 }
+const updateinfo=async(req,res)=>{
+
+    try{
+        const {id:infoID}=req.params
+const data=await information.findByIdAndUpdate({_id:infoID},req.body,{
+    new:true,
+    runValidators:true
+})
+res.status(200).json({data})
+    }catch(error){
+console.log(error)
+    }
+}
 module.exports={
-    getinfo,createinfo,deleteinfo
+    getinfo,createinfo,deleteinfo,updateinfo
 }

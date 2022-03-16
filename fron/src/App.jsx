@@ -1,47 +1,30 @@
-import { useState } from 'react'
-// import logo from './logo.svg'
-// // import './App.css'
-import * as api from './api'
-import { Post } from './Post'
-// const start = async () => {
-  // try {
-    const data = await api.getinfo()
- console.log(data.data.data)
-  // } catch (error) {
-    // console.log(error)
-  // }
-// }
-// const start=async (post)=>{
-//   await api.createinfo(post)
-// }
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Foot } from './component/Foot';
+import { Navba } from './component/Navba';
+import Donor from './Pages/Donor';
+import Home from './Pages/Home';
+import Volun from './Pages/Volunteer';
+function App(){
 
-function App() {
-  const [material, setmaterial] = useState({heading:''})
-
-  const handlesubmit=(e)=>{
-    e.preventDefault()
-  
-   api.createinfo(material)
-  
-  }
-  
   return (
-
-    <div>
-      <form onSubmit={handlesubmit} >
-        <label >Heading</label>
-        <input type="text" onChange={(e)=>setmaterial({heading:e.target.value})} />
-        {/* <label >Message</label>
-        <input type="text" onChange={(e)=>setmaterial(...material,message=e.target.value)} /> */}
-      <button type='submit'>Submit</button>
-      </form>
-      {data.data.data.map((da) => (
-        <Post da={da} material={material} setmaterial={setmaterial}/>
-      )
-
-      )}
-    </div>
+    <BrowserRouter>
+   
+      <Navba />
+      <Routes>
+        <Route path="/donor" element={<Donor />} exact />
+        <Route path="/" element={<Home />} exact />
+      
+       <Route path="/vol" element={<Volun />} exact />
+        {/* <Route path="/profile" element={<Profile />} exact /> */}
+        {/* <Route path="/club" element={<Club />} exact /> */}
+      </Routes>
+      <Foot />
+    
+  </BrowserRouter>
+   
   )
-}
+      }
+
 
 export default App
