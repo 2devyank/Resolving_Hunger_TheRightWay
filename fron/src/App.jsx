@@ -1,27 +1,32 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Foot } from './component/Foot';
-import { Navba } from './component/Navba';
+import Navba from './component/Navba';
 import Donor from './Pages/Donor';
 import Home from './Pages/Home';
-import Volun from './Pages/Volunteer';
+import Volunteer from './Pages/Volunteer';
+// import  {Foot } from './component/Foot.jsx';
+// import  {Navba as Navba}  from './component/Navba.jsx';
+// import Donor from './Pages/Donor.jsx';
+// import Home from './Pages/Home.jsx';
+// import Volun from './Pages/Volunteer.jsx';
 function App(){
 
   return (
-    <BrowserRouter>
-   
-      <Navba />
-      <Routes>
-        <Route path="/donor" element={<Donor />} exact />
-        <Route path="/" element={<Home />} exact />
-      
-       <Route path="/vol" element={<Volun />} exact />
-        {/* <Route path="/profile" element={<Profile />} exact /> */}
-        {/* <Route path="/club" element={<Club />} exact /> */}
-      </Routes>
-      <Foot />
     
-  </BrowserRouter>
+    <BrowserRouter>
+<Navba/>
+    <div>
+<Routes>
+
+  <Route  path="/" element={<Home />} exact/>
+  <Route  path="/donor" element={<Donor />} exact/>
+  <Route  path="/volun" element={<Volunteer />} exact/>
+
+</Routes>
+   </div>
+<Foot/>
+</BrowserRouter>
    
   )
       }
