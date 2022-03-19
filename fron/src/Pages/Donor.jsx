@@ -4,8 +4,10 @@ import React from 'react'
 // // import './App.css'
 import * as api from '../api'
 import { Post } from '../component/Post'
-import Form from '../component/Form'
+import Forms from '../component/Forms'
 import { Container } from 'react-bootstrap'
+import '../Styles/donor.css'
+
 
     const data = await api.getinfo()
  console.log(data.data.data)
@@ -26,8 +28,10 @@ function Donor() {
 <Container>
 
     <div>
-      
-      <Form material={material} handlesubmit={handlesubmit} setmaterial={setmaterial}/>
+      <div className='for'  >
+
+      <Forms material={material} handlesubmit={handlesubmit} setmaterial={setmaterial}/>
+      </div>
       {data.data.data.map((da) => (
         <Post da={da} material={material} setmaterial={setmaterial} key={da._id}/>
       )

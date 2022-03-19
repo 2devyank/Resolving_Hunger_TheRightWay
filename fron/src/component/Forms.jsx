@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 
-import {Button, Modal, ModalBody} from 'react-bootstrap'
+import {Button,Form, Modal, ModalBody} from 'react-bootstrap'
 
-export default function Form({handlesubmit,material,setmaterial}) {
-    const [show, setShow] = useState(false);
-
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
+export default function Forms({handlesubmit,material,setmaterial}) {
+  
   return (
 //     <form onSubmit={handlesubmit} >
 //     <label >Heading</label>
@@ -17,17 +14,10 @@ const handleShow = () => setShow(true);
  
 //   </form>
 <>
-<Button variant="primary" onClick={handleShow}>
-  Launch demo modal
-</Button>
 
-<Modal show={show} onHide={handleClose} centered>
-  <Modal.Header closeButton>
-    <Modal.Title>Modal heading</Modal.Title>
-  </Modal.Header>
-  <Modal.Body>
+  
 
-  <form onSubmit={handlesubmit} >
+  <Form onSubmit={handlesubmit} >
     <label >Organization</label><br />
     <input type="text" value={material.org} onChange={(e)=>setmaterial({...material,org:e.target.value})} />
   <br />
@@ -43,10 +33,10 @@ const handleShow = () => setShow(true);
 <br />
   <Button type='submit'>Submit</Button>
  
-  </form>
-  </Modal.Body>
+  </Form>
+  
  
-</Modal>
+
 </>
   )
 }
