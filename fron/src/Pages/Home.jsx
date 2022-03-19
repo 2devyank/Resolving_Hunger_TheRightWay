@@ -6,7 +6,7 @@ import svg from '../component/teamwork.mp4'
 import '../Styles/home.css'
 export default function Home() {
   return (
-   <Container>
+   <Container fluid className='f'>
 <br />
 <video loop autoPlay style={{width:'100%',height:'82vh'}}>
         <source
