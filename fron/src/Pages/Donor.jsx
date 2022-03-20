@@ -25,18 +25,23 @@ function Donor() {
     }
   
   return (
-<Container>
+<Container fluid className='don'>
 
     <div>
+      <br />
       <div className='for'  >
 
       <Forms material={material} handlesubmit={handlesubmit} setmaterial={setmaterial}/>
       </div>
+      <br />
+      <div className='post'>
+
       {data.data.data.map((da) => (
         <Post da={da} material={material} setmaterial={setmaterial} key={da._id}/>
-      )
-
-      )}
+        )
+        
+        )}
+        </div>
     </div>
     </Container>
   )
