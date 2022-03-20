@@ -4,6 +4,14 @@
     flex-direction: column;
     /* justify-content: space-between; */
 }
+.graph p{
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 230;
+}
+.sec p{
+    font-size: 20px;
+}
 .fir{
     padding:50px 50px; 
 }
@@ -131,6 +139,7 @@
         display: block;
         padding:0px 0px
     }
+    
     .graph{
         padding: 0px 0px;
         width: 100%;
