@@ -1,7 +1,8 @@
 
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-
+import { Link } from 'react-router-dom'
+import '../Styles/Navbar.css'
 export default function Navba() {
   return (
     <Navbar style={{ background: "lightblue" }} expand="lg" >
@@ -23,10 +24,15 @@ export default function Navba() {
           style={{ maxHeight: '100px', flex: "0.5", display: "flex", justifyContent: 'space-between' }}
           navbarScroll
         >
-          <Nav.Link href="/">Home</Nav.Link>
-          {/* <Nav.Link href="/club"></Nav.Link> */}
-          <Nav.Link href="/donor">Give Now</Nav.Link>
-          <Nav.Link href="/volun">Volunteer</Nav.Link>
+          <Link className='nav' to="/" >
+          <Nav >Home</Nav>
+          </Link>
+          <Link  className='nav' to="/donor">
+          <Nav>Give Now</Nav>
+          </Link>
+          <Link  className='nav' to="/volun">
+          <Nav>Volunteer</Nav>
+          </Link>
 
         </Nav>
 
