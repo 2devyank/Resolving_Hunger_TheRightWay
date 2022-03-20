@@ -50,7 +50,7 @@ export default function Forms({handlesubmit,material,setmaterial}) {
     <Form.Control value={material.contact} onChange={(e)=>setmaterial({...material,contact:e.target.value})}  style={{background:'transparent',borderRadius:'2rem'}} type="text"  />
   </Form.Group>
   <Form.Group className="mb-2" >
-    <Form.Label>Information</Form.Label>
+    <Form.Label>Please Enter The Details about Food which you would like to Donate !</Form.Label>
     <Form.Control  value={material.info}  onChange={(e)=>setmaterial({...material,info:e.target.value})}  as="textarea" rows={3} style={{background:'transparent',borderRadius:'2rem'}} type="text"  />
   </Form.Group>
   

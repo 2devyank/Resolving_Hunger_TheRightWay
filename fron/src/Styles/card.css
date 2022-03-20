@@ -1,5 +1,13 @@
 .card{
     width: 30%;
+    padding: 40px 40px;]
+    
+}
+  
+.but{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 @media(max-width:800px){
 .card{

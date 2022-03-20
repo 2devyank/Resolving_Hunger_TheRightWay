@@ -23,10 +23,16 @@ api.updateinfo(id,post)
         <Card.Header>Information</Card.Header>
         <Card.Body>{da.info}</Card.Body>
         <Card.Header>Address & Contact details</Card.Header>
-        <Card.Footer>{da.address}{da.contact}</Card.Footer>
+        <Card.Footer>{da.address} & <span></span><span></span>{da.contact}</Card.Footer>
+        <hr />
+        <div className='but'>
+
         <Button onClick={()=>del(da._id)}>Delete</Button>
      <Button onClick={()=>setmaterial({org:da.org,address:da.address,info:da.info,contact:da.contact})}>Edit</Button>
      <Button onClick={(e)=>up(da._id,material)}>Update</Button>
+        </div>
+        
+
       </Card>
   
     )
