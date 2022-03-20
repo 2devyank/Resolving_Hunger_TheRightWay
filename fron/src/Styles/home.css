@@ -5,7 +5,26 @@
     /* justify-content: space-between; */
 }
 .fir{
-    padding:50px 80px; 
+    padding:50px 50px; 
+}
+.facts{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    /* text-align: center; */
+    /* align-items: center; */
+}
+.facts img{
+    width: 30%;
+}
+.graph p{
+    margin-top: 10px;
+}
+.graph{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 .slider{
     width:70%;
@@ -91,6 +110,10 @@
 .end Button{
     background-color: green;
 } 
+.sec{
+    padding:50px 80px; 
+
+}
 @media(max-width:800px){
     .fir{
         padding: 0px 0px;
@@ -103,5 +126,19 @@
     }
     .end{
         padding:10px 10px;
+    }
+    .facts{
+        display: block;
+        padding:0px 0px
+    }
+    .graph{
+        padding: 0px 0px;
+        width: 100%;
+    }
+    .sec{
+        padding: 10px 10px;
+    }
+    .graph img{
+        width: 60%;
     }
 }
