@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url='http://localhost:5000/api/v1'
+const url='https://resolvinghungertherightway.herokuapp.com/api/v1'
 
 export const getinfo=()=>axios.get(url)
 export const createinfo=(newpost)=>axios.post(url,newpost)
