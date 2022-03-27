@@ -7,9 +7,9 @@ function Display({da}) {
     <h2>{da.name}</h2>
     <p>{da.mission}</p>
     <p>
-        Location:{da.location}
+        Location : {da.location}
         </p>
-        <p>Contact Details:{da.contact}</p>
+        <p>Contact Details : {da.contact}</p>
         </div>
     // <div>hello</div>
   )

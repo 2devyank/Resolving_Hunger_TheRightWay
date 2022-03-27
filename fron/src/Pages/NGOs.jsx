@@ -11,16 +11,32 @@ import '../Styles/n.css'
 
  function NGOs() {
     const [dat,setdat]=useState(odata);
+    const [search,setsearch]=useState('');
+
+   const  handlesearch=()=>{
+        return (
+            dat.filter((d)=>
+                d.location.toLowerCase().includes(search)
+            )
+        )
+    }
+
     console.log(dat);
    return (
-    <Container fluid className='dis'>
-
+    <Container fluid className='dis' >
+         <div className='pad'>
          <div>
-{dat.map((da)=>{ 
+             <h1>Search Ngo Near To You !</h1>
+
+<input type="text" onChange={(e)=>setsearch(e.target.value)}  />
+<br />
+<br />
+{handlesearch().map((da)=>{ 
     return <Display da={da} /> 
           
               })}
             
+            </div>
             </div>
         </Container>
   )
