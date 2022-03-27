@@ -4,6 +4,7 @@ import { Foot } from './component/Foot';
 import Navba from './component/Navba';
 import Donor from './Pages/Donor';
 import Home from './Pages/Home';
+import NGOs from './Pages/NGOs';
 import Volunteer from './Pages/Volunteer';
 // import  {Foot } from './component/Foot.jsx';
 // import  {Navba as Navba}  from './component/Navba.jsx';
@@ -22,6 +23,7 @@ function App(){
   <Route  path="/" element={<Home />} exact/>
   <Route  path="/donor" element={<Donor />} exact/>
   <Route  path="/volun" element={<Volunteer />} exact/>
+  <Route  path="/org" element={<NGOs />} exact/>
 
 </Routes>
    </div>

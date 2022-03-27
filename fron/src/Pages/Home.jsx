@@ -1,15 +1,15 @@
 import React from 'react'
 import { Button, Carousel, Container } from 'react-bootstrap'
 // import Player from '../component/Player'
-import v from '../component/v3.mp4'
-import svg from '../component/teamwork.mp4'
+// import v from '../component/v3.mp4'
+// import svg from '../component/teamwork.mp4'
 import food from '../component/food.png'
 import chef from '../component/chef-platter.png'
 import trash from '../component/trash.png'
 import '../Styles/home.css'
-import pic from '../component/pic.png'
+// import pic from '../component/pic.png'
 import pic1 from '../component/pic1.jpg'
-import pic2 from '../component/pic2.jpg'
+// import pic2 from '../component/pic2.jpg'
 import pic3 from '../component/pic3.jpg'
 import p from '../component/p.png'
 export default function Home() {
@@ -98,8 +98,8 @@ nearly 500 grams of food is wasted — through preparation, spoilage and leftove
   <div>
   <h1>Initiative Through This Program</h1>
 <p>Through this program we provide a platform for  restaurants owner's , grocer's ,wedding organizers etc
-through our platform they get two choices either they can directly connect with the Non Government Oganization  or they 
-can provide information about how and when they experience food wastage , Which could reach the deserving one.
+through our platform they get two choices either they can directly connect with the Non Government Oganization by visiting the organization section they can find the NGO's  or they 
+can provide information about how and when they experience food wastage so that they can be contacted by the NGO's themselve ,therefore food could reach the deserving one.
 There are a lot of NGOs that are working to control food wastage by distributing excess food in areas where it is needed </p>
 
   </div>
@@ -132,6 +132,17 @@ These dates aren’t required by federal law (though some states require them)
   </div>
 
 </div>
+<div className="sec">
+  <div>
+  <h1>Why do we have a Volunteer Section ?</h1>
+
+<p>You may be thinking we are not any type of organization then also we are asking people for volunteering.The only reason for this is we don't 
+  have NGO's in every corner of our country , hereby we urge people to come out on our platform 
+  and visit to Give Now section to be helpful and become a part of cause.
+</p>
+
+  </div>
+  </div>
     <div className='last'>
       <div className='end'>
        <h2>Make Food Reach The Right Place</h2><a href="/donor">

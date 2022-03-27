@@ -30,6 +30,9 @@ export default function Navba() {
           <Link  className='nav' to="/donor">
           <Nav>Give Now</Nav>
           </Link>
+          <Link  className='nav' to="/org">
+          <Nav>NGO's</Nav>
+          </Link>
           <Link  className='nav' to="/volun">
           <Nav>Volunteer</Nav>
           </Link>

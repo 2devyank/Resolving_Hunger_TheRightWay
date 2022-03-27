@@ -27,10 +27,11 @@ function Donor() {
   return (
 <Container fluid className='don'>
 
-    <div>
+    <div className='pad'>
+    <h1>Transform Lives !</h1>
       <br />
       <div className='for'  >
-
+      
       <Forms material={material} handlesubmit={handlesubmit} setmaterial={setmaterial}/>
       </div>
       <br />
