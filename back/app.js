@@ -2,7 +2,7 @@ const express =require('express')
 const cors=require('cors')
 const mongoose=require('mongoose')
 const bodyparser=require('body-parser')
-// require('dotenv').config()
+require('dotenv').config()
 
 const inforoute=require('./routes/inforoute')
 const app=express()
@@ -17,8 +17,8 @@ app.get('/',(req,res)=>{
 })
 
 const port=process.env.PORT||5000
-const connect_url="mongodb+srv://dev:2002nagdev@cluster0.detlt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-mongoose.connect(connect_url,{useNewUrlParser:true,useUnifiedTOpology:true})
+
+mongoose.connect(process.env.connect_url,{useNewUrlParser:true,useUnifiedTOpology:true})
 .then(()=>{
     app.listen(port,console.log('listening on port 5000'))
 })

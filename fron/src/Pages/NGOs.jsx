@@ -32,7 +32,7 @@ import '../Styles/n.css'
 <br />
 <br />
 {handlesearch().map((da)=>{ 
-    return <Display da={da} /> 
+    return <Display da={da} key={da}/> 
           
               })}
             
